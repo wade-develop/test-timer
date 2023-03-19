@@ -68,7 +68,7 @@ export default {
 
 <style scoped>
 .timer-item {
-  background-color: #ffffff22;
+  background-color: #00000044;
   padding: 10px;
   margin: 5px;
   border-radius: 10px;

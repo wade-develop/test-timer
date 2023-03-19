@@ -3,21 +3,21 @@
     <div class="input-timer__field">
       <div class="input-timer__head">Минуты</div>
       <div class="input-timer__picker">
-        <v-btn @click="() => setDuration(-10 * modifier.minutes)">-10</v-btn>
-        <v-btn @click="() => setDuration(-1 * modifier.minutes)">-1</v-btn>
+        <v-btn @click="setDuration(-10 * modifier.minutes)">-10</v-btn>
+        <v-btn @click="setDuration(-1 * modifier.minutes)">-1</v-btn>
         <span class="input-timer__count">{{ minutes }}</span>
-        <v-btn @click="() => setDuration(1 * modifier.minutes)">+1</v-btn>
-        <v-btn @click="() => setDuration(10 * modifier.minutes)">+10</v-btn>
+        <v-btn @click="setDuration(1 * modifier.minutes)">+1</v-btn>
+        <v-btn @click="setDuration(10 * modifier.minutes)">+10</v-btn>
       </div>
     </div>
     <div class="input-timer__field">
       <div class="input-timer__head">Секунды</div>
       <div class="input-timer__picker">
-        <v-btn @click="() => setDuration(-10 * modifier.seconds)">-10</v-btn>
-        <v-btn @click="() => setDuration(-1 * modifier.seconds)">-1</v-btn>
+        <v-btn @click="setDuration(-10 * modifier.seconds)">-10</v-btn>
+        <v-btn @click="setDuration(-1 * modifier.seconds)">-1</v-btn>
         <span class="input-timer__count">{{ seconds }}</span>
-        <v-btn @click="() => setDuration(1 * modifier.seconds)">+1</v-btn>
-        <v-btn @click="() => setDuration(10 * modifier.seconds)">+10</v-btn>
+        <v-btn @click="setDuration(1 * modifier.seconds)">+1</v-btn>
+        <v-btn @click="setDuration(10 * modifier.seconds)">+10</v-btn>
       </div>
     </div>
     <v-btn @click="setTimer" :disabled="!duration">Создать таймер</v-btn>
@@ -72,7 +72,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff22;
+  background-color: #00000044;
   border-radius: 10px;
   padding: 30px;
 }
